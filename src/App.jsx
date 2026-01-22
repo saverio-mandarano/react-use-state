@@ -1,5 +1,5 @@
 import MainHeader from "./components/MainHeader"
-import Language from "./components/Language"
+import Language from "./components/LanguageButton"
 import MainContent from "./components/MainContent"
 
 function App() {
