@@ -1,10 +1,11 @@
+import MainHeader from "./components/MainHeader"
 import Language from "./components/Language"
 
 function App() {
 
   return (
     <>
-      <h1>ciao</h1>
+      <MainHeader />
       <Language />
     </>
   )
