@@ -1,8 +1,12 @@
+import Language from "./components/Language"
+
 function App() {
-  //const [count, setCount] = useState(0)
 
   return (
+    <>
       <h1>ciao</h1>
+      <Language />
+    </>
   )
 }
 
