@@ -8,7 +8,13 @@ export default function Language () {
         <div>
             {
                 languages.map(lang => (
-                    <button className="btn btn-primary me-2 mt-5 mb-5" key={lang.id} onClick={() => setLanguage(lang)}> 
+                    <button key={lang.id} onClick={() => setLanguage(lang)}
+                        className={
+                            language && language.id === lang.id 
+                            ? "btn btn-primary me-2 mt-5 mb-5"
+                            : "btn btn-outline-primary me-2 mt-5 mb-5"
+                        }
+                    > 
                         {lang.title}
                     </button>
                 ))
