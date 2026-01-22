@@ -6,7 +6,6 @@ export default function Language () {
 
     return (
         <div>
-            <div className="language"></div>
             {
                 languages.map(lang => (
                     <button key={lang.id} onClick={() => setLanguage(lang)}> 
@@ -14,7 +13,15 @@ export default function Language () {
                     </button>
                 ))
             }
-{/* <button key={} onClick={() => {setLanguage(languages[0])}}>{languages[0].title}</button> */}
+            <div>
+                {language ? ( 
+                    <>
+                    <h2>{language.title}</h2>
+                    <p>{language.description}</p>
+                    </>
+                ) : ( <p>Nessun linguaggio selezionato</p> )
+            }
+            </div>
         </div>
     )
 }
