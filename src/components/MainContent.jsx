@@ -3,7 +3,9 @@ import Language from "./Language";
 export default function MainContent () {
     return (
         <main>
-            <Language />
+            <div className="cont">
+                <Language />
+            </div>
         </main>
     )
 }
