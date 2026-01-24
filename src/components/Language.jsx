@@ -12,14 +12,17 @@ export default function Language () {
                 languages.map(lang => (
                     <LanguageButton 
                         key={lang.id}
-                        lang={lang}
-                        setLanguage={setLanguage}
-                        language={language}
+                        title={lang.title}
+                        chooseLanguage={() => setLanguage(lang)}    
+                        isSelected={language && language.id === lang.id}
                     />
                 ))
             }
 
-            <LanguageCard language={language} />
+            <LanguageCard 
+
+               language={language}
+            />  
         </div>
     )
 }

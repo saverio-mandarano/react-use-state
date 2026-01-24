@@ -1,4 +1,5 @@
 export default function LanguageCard ({language}){
+    
     return(
         <div className="border p-3 rounded-3">
             {language ? ( 
@@ -11,3 +12,6 @@ export default function LanguageCard ({language}){
         </div>
     )
 }
+
+
+//isSelected={language && language.id === lang.id}
